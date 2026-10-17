@@ -1,19 +1,37 @@
-# Snidex Studio – demonstration och beredningsförslag
+# Snidex Studio 3
 
-Webbplats: https://jsall77.github.io/snidex-studio/
+Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen demo: https://jsall77.github.io/snidex-studio/ . Källorna och exempeldata innehåller ingen verklig kundorder.
 
-Visuell konfigurator för SA KFI, ST KFI, SA EFI, fönsterdörrar och specialformer. Version 2 har upp till 6 fält i bredd och 3 rader, postcentrum, individuella öppningssätt/hängning och måttsatt spröjsplacering per fält.
+Starta `python3 -m http.server 5177 --directory dist`. Ingen installation eller byggkedja krävs. För en självständig HTML-fil används `../package_standalone.py` från arbetsytans rot (lokala absoluta arbetsvägar i paketeringsverktyget).
 
-20 reservdelsreferenser från Snidex visas med källor och kända datakonflikter. Detta är inte ett automatiskt kompatibilitets- eller inköpsregister.
+## Genomfört
 
-Kundalbum som PDF samt beredningsblad och gransknings-JSON skapas lokalt på användarens enhet. Projekt sparas i den egna webbläsaren.
+- SA KFI, ST KFI, SA EFI och tre fönsterdörrsystem. Rektangulärt, runt, ellips-/cirkelsegment och separat högerhöjd för snedform.
+- Globalt rutnät samt lokalt rekursivt fältträd med stabila ID, måttsatta postcentrum, delning/sammanslagning och individuella öppnings-/konstruktionsönskemål.
+- Spröjs per fält: system, bredd, båge/glasnivå, isolerrutespalt och egna centrum. Logiska glasdelar visas som principgeometri.
+- Träslag, täckmålning, bets/lasyr, klarlack, glans och 215 ungefärliga RAL CLASSIC-skärmprover med sparad RAL-kod.
+- Snidex Original/Traditionell ytterprofil, Slät/Pärla/Fas innerprofil samt egna namngivna profiler som redigerbara punktkonturer och faktisk illustrativ 3D-geometri.
+- Best Glass och Press Glass samt namngivna specialglas, krav, skikt, spalter, beläggning och databladreferenser per fält.
+- Winkhaus/ASSA som beslagssystemönskemål, separat handtagsinköpskälla (Snidex/Beslagskonsulten), 20 artikelreferenser med källor och fem verkliga produktfoton. Fyra fotoanpassade handtagsformer, detaljzoom och föreslagen Snidexprofilering.
+- Antal, littera, rum/plan/fasad, fästa mallar, skapa liknande, ändra sparad position, mängdändringar, individuella/grupperade lås, ångra/gör om och tangentbordsnavigering.
+- Projektimport/export, utförandelänkar, A/B-jämförelse, lokalt fotomontage, fryst lokal granskningsnotering och projektbundet dokumentarkiv.
+- Kundalbum och produktionsförslag i PDF/HTML/JSON, med mängder, positionsrevisioner och dokument-ID. Äldre dokumentversioner kan återskapas från lokalt sparade ögonblicksbilder.
+- Import av versionsmärkt masterdata, begränsade deklarativa formler/regler, villkorade receptlistor/pris, granskningspaket med SHA-256 och idempotensnyckel samt matchning av manuellt importerad kvittens.
 
-## Produktionsstatus
+## Produktionsgräns
 
-Detta är ett beredningsförslag för teknisk granskning. Editorns arbetsområde är inte Snidex tillverkningsgränser. Profiler, beslag och glasmått är principiella. Ingen kalkyl, orderhantering, verifierad kaplista, glasorder eller CAM skapas.
+Ingen verklig Snidex-masterdata, produktionsprislista, verifierad profilsats, glas-/beslagsmappning eller Archimede-adapter har levererats. Profiler, beslag, trästruktur och färger är illustrativa. Ett känt leverantörsnamn innebär inte artikelkompatibilitet. Egna profiler och glas är konstruktionsförfrågningar.
 
-Kosmosoft Archimede är integrationsmål. Native-import är inte implementerad. Beredningsformatet `snidex-studio-preparation/2.0` har alltid status `not_released`. Tillverkningsregler, produkt-/artikelmappning och provimport behöver fastställas med Snidex.
+Alla beräknade listor kräver uttryckligt importerade recept. Tomt/ofullständigt/otillämpligt bibliotek ger null och kontrollpunkter. Egna profiler, ändrade glasönskemål och omappade beslag får inte ärva ett vanligt recept. Importens `verified:true` är importörens uppgift. Inga lokala godkännanden eller kvittenser kan frisläppa produktion. Inga CNC-filer eller native Archimede-importfiler skapas.
 
-Research och utvecklingsunderlag: https://jsall77.github.io/snidex-studio/beredning.html
+## Lagring och delning
 
-Bibliotek: Three.js och pdf-lib. Licenstexter finns i arkivet. Produktreferenser och referensfoto: Snidex.
+GitHub Pages är öppet och har ingen inloggning. Projekt, masterdata, dokumentarkiv och ångrahistorik lagras lokalt i webbläsaren, inte på en gemensam server. Exportera projektfiler för säkerhetskopia. Delningslänkar innehåller bara fönsterkonfiguration, inte projekt-/kundmetadata. Fasadfoton hålls i sidans minne och skickas inte iväg. Skärmen skickar inga order/offertförfrågningar.
+
+Intern drift med gemensamma projekt, behörigheter, central attest och autentiserad ERP-återrapportering kräver en separat server och verifierad integration.
+
+## Verifiering
+
+Kör med Node: `check-model.mjs`, `check-model-v3.mjs`, `check-preparation.mjs`, `check-production-v3.mjs`, `check-project-v3.mjs`. Testerna omfattar 192 + 432 + 1152 geometri-/beredningsfall samt meningsfulla scen-, regel-, recept-, lås-, import-, mängd-, hash- och kvittensfall. Separata presentations-/material-/glaseditortester finns i arbetsytans `work/`. PDF-exempel provgenereras i riktig webbläsare och renderas för visuell kontroll.
+
+Snidex grafiska webbprofil är observerad på deras startsida, inte hämtad ur en officiell grafisk manual. Originalbilder och logga attribueras Snidex. Montserrat distribueras under OFL. Three.js, pdf-lib och RAL-skärmdatans MIT-licenser medföljer under assets. RAL-datan är en oberoende ungefärlig skärmpalett, inte RAL:s licensierade digitalbibliotek. Fysiskt kulörprov behövs före order.
