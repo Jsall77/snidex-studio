@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Snidex Studio – utvecklingsunderlag för beredning</title>
+<style>
+:root{--ink:#23312b;--muted:#5e6a62;--green:#344f42;--line:#d8ded6;--paper:#fff;--wash:#f2f4ee;--amber:#8b5e19;--amber-bg:#faf1de}*{box-sizing:border-box}body{margin:0;background:#e9ede6;color:var(--ink);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:#245e49;text-underline-offset:3px}a:hover{color:#092f20}main{max-width:1180px;margin:32px auto;background:var(--paper);box-shadow:0 10px 50px #23312b0d}header{padding:56px 64px 44px;background:var(--green);color:#fff}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}h1{font-size:clamp(32px,4vw,54px);line-height:1.08;letter-spacing:-.035em;margin:20px 0}header p{max-width:800px;color:#e1e9df;font-size:20px;line-height:1.5}.meta{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;margin-top:28px}.meta span{border:1px solid #ffffff50;padding:5px 10px;border-radius:3px}nav{padding:15px 64px;border-bottom:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap;background:#fbfcf8;font-size:13px}nav a{text-decoration:none}.content{padding:6px 64px 56px}section{padding-top:36px;margin-bottom:8px}h2{font-size:27px;line-height:1.25;letter-spacing:-.02em;margin:0 0 16px}h3{font-size:18px;line-height:1.35;margin:22px 0 10px}p{margin:0 0 14px}.lead{font-size:18px}.note,.callout{padding:18px 22px;border-left:4px solid var(--green);background:var(--wash);margin:20px 0}.callout{background:var(--amber-bg);border-color:#b3853e}.small{font-size:13px;color:var(--muted)}.badge{display:inline-block;font-size:11px;font-weight:750;letter-spacing:.035em;padding:3px 8px;white-space:nowrap;border-radius:3px;background:#e6efe5;color:#31523b}.badge.unknown{background:var(--amber-bg);color:var(--amber)}.badge.proposal{background:#edf0f4;color:#40516b}.table-wrap{overflow-x:auto;margin:18px 0}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.45}th,td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:var(--wash);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#405347}tbody tr:nth-child(even){background:#fafbf8}td:first-child{font-weight:650}ul,ol{padding-left:23px;margin:10px 0 18px}li{padding-left:3px;margin-bottom:8px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{border:1px solid var(--line);padding:20px 22px;background:#fcfdf9}.card h3{margin-top:0}.steps{counter-reset:step}.step{position:relative;padding:0 0 20px 50px;border-bottom:1px solid var(--line);margin:22px 0}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;background:var(--green);color:#fff;font-weight:700}.step h3{margin-top:0}.flow{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap;margin:20px 0}.flow div{flex:1;min-width:135px;padding:14px;background:var(--wash);border-top:3px solid var(--green);font-size:13px;line-height:1.4}.flow b{display:block;margin-bottom:5px}.source-list{columns:2;column-gap:35px;font-size:13px}.source-list li{break-inside:avoid;margin-bottom:13px}.diagram{width:100%;height:auto;display:block;border:1px solid var(--line);background:#f8faf5;margin:18px 0}footer{padding:24px 64px;background:var(--wash);color:var(--muted);font-size:12px;border-top:1px solid var(--line)}.print-hint{float:right;color:#e1e9df;font-size:12px}@media(max-width:760px){main{margin:0}header{padding:34px 24px}nav{padding:15px 24px;gap:12px}.content{padding:0 24px 36px}footer{padding:22px 24px}.grid{grid-template-columns:1fr}.source-list{columns:1}th,td{padding:10px;min-width:130px}.print-hint{display:none}}@page{size:A4;margin:17mm 15mm}@media print{body{background:white;font-size:10pt;line-height:1.45}main{max-width:none;box-shadow:none;margin:0}header{background:white!important;color:var(--ink);padding:0 0 16px;border-bottom:3px solid var(--green)}header p{color:var(--muted);font-size:13pt}h1{font-size:30pt}.meta{margin-top:15px}.meta span{border-color:var(--line)}nav,.print-hint{display:none}.content{padding:0}section{padding-top:24px}h2{font-size:19pt;break-after:avoid}h3{font-size:12pt;break-after:avoid}p,li{orphans:3;widows:3}.table-wrap{overflow:visible}table{font-size:8.5pt;line-height:1.35}th,td{padding:8px 7px}thead{display:table-header-group}tr,.card,.step,.note,.callout,.diagram{break-inside:avoid}.source-list{columns:1}.small{font-size:8.5pt}footer{padding:14px 0;background:white;margin-top:20px}.flow div{min-width:0}a{color:#245e49;text-decoration:underline}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<span class="print-hint">Utskriftsanpassad · Skriv ut → Spara som PDF</span>
+<div class="eyebrow">Snidex Studio / Utvecklingsunderlag</div>
+<h1>Från kundens fönsteridé<br>till beredarens arbetsverktyg.</h1>
+<p>En gemensam produktmodell för luft, bågar, glas, spröjs och beslag – med en stegvis väg till verifierade underlag och Kosmosoft Archimede.</p>
+<div class="meta"><span>17 oktober 2026</span><span>SA KFI · ST KFI · SA EFI</span><span>För diskussion med konstruktion och beredning</span></div>
+</header>
+<nav aria-label="Rapportens innehåll"><a href="#belagg">1. Produktbevis</a><a href="#falt">2. Luft och fält</a><a href="#sprojs">3. Spröjs och glas</a><a href="#beslag">4. Beslag</a><a href="#archimede">5. Archimede</a><a href="#vag">6. Utvecklingsväg</a><a href="#masterdata">7. Underlag från Snidex</a></nav>
+<div class="content">
+<section>
+<h2>Rekommenderad riktning</h2>
+<p class="lead">Utveckla ett visuellt beredarverktyg där varje fält har en egen konstruktion och varje tillverkningsdel kan spåras till en artikel, regelrevision och godkänd ritning.</p>
+<p>Antal luft, antal öppningsbara bågar och antal glasrutor beskriver olika saker. Spröjsens utseende är bara en del av uppgiften: beredaren behöver veta vilket glas eller vilken båge spröjsen tillhör, hur den fästs och vilka verkliga delar som ska beställas.</p>
+<div class="callout"><strong>Rapportens status.</strong> Detta är research och föreslagen systemdesign. Den beskriver önskat arbetssätt och databehov, inte vilka funktioner som är implementerade. Publicerade produktmöjligheter är inte tillräckliga för att frisläppa kapmått, glasorder eller maskinprogram. Ingen fabrik eller maskin har verifierats inom denna undersökning.</div>
+</section>
+<section id="belagg">
+<h2>1. Det offentliga underlaget ger en tydlig start</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Område</th><th>Verifierat i primärkälla</th><th>Återstår för beredning</th></tr></thead>
+<tbody>
+<tr><td>SA KFI</td><td><span class="badge">Publicerat</span><br>Kopplad 2+1, inåtgående. Karmdjup 100/115 respektive 128/143 mm. <a href="https://www.snidex.se/snidex-aluminiumfonster/">Snidex SA</a></td><td>Profilrecept, glasuppbyggnad, beslag, dimensioneringsgränser och tillåtna kombinationer.</td></tr>
+<tr><td>ST KFI</td><td><span class="badge">Publicerat</span><br>Kopplad 2+1, inåtgående, karmdjup 115 mm. <a href="https://www.snidex.se/snidex-trafonster-st/">Snidex ST</a></td><td>Snitt, artikelkoder, delbågarnas uppbyggnad och storleksberoende regler.</td></tr>
+<tr><td>SA EFI</td><td><span class="badge">Publicerat</span><br>Enkelbåge, 3-glas, inåtgående, karmdjup 100/115 mm. <a href="https://www.snidex.se/snidex-aluminiumfonster/">Snidex SA</a></td><td>Godkända glasrecept, spröjssystem, beslag och exakta tillverkningsavdrag.</td></tr>
+<tr><td>Kombinationspartier</td><td>Fasta och öppningsbara fält, fasadglas, fyllning och vädringslucka kan kombineras i samma karm. <a href="https://www.snidex.se/arkitekt/">Snidex för arkitekter</a></td><td>Max antal fält, postdimensionering, största karmmått och funktionsmatris per produkt.</td></tr>
+<tr><td>Specialformer</td><td>SA/ST har dokumenterade formmöjligheter. ST beskriver runda, vinklade och välvda former. Järven visar välvda SA-fönster. <a href="https://www.snidex.se/snidex-trafonster-st/">ST</a> · <a href="https://www.snidex.se/bostadsrattsforening/">Järven</a></td><td>Radier, vinklar, glasformer, öppningsbarhet och beslag för varje konstruktion.</td></tr>
+<tr><td>Spröjs och poster</td><td>Tricotfabriken: glasdelande spröjs i ytterbåge och poster i karm. Järven: laserskuren spröjs i ytterbåge. <a href="https://www.snidex.se/bostadsrattsforening/">Snidex referenser</a></td><td>Profilbredder, infästning, delning och artikelregister. Mellanglasspröjs är inte verifierat som generellt Snidexval i granskade källor.</td></tr>
+<tr><td>Standard och volym</td><td>Snidex offertformulär anger standardkulör NCS S0502-Y. <a href="https://www.snidex.se/kundservice/">Kundservice</a></td><td><span class="badge unknown">Behöver bekräftas</span><br>Vilka produktrecept, mått, spröjs och beslag som faktiskt är standard och mest sålda.</td></tr>
+</tbody></table></div>
+<p class="small">ST EDU-raden på produktsidan benämns enkel dörr men beskriver kopplad 2+1. Den motsägelsen behöver lösas av Snidex innan konstruktionen läggs in som ett verifierat recept. Publicerade prestandaintervall får inte kombineras till ett löfte om bästa U-, ljud- och brandvärde samtidigt.</p>
+</section>
+<section id="falt">
+<h2>2. Luft behöver bli fält med egna mått och funktioner</h2>
+<p>En-, två- och treluft är lämpliga startmallar. Under dem behövs en modell som kan dela ett markerat fält vertikalt eller horisontellt och hantera överljus, olikdelning och dörr med sidoljus. Någon offentlig generell maxgräns för Snidex antal luft har inte hittats.</p>
+<svg class="diagram" role="img" aria-labelledby="field-title field-desc" viewBox="0 0 900 260"><title id="field-title">Tre exempel på fältindelning</title><desc id="field-desc">Principförslag med olikdelad tvåluft, två nedre fält med överljus och dörr med sidoljus. Inga produktionsmått.</desc><g fill="#e2ebe3" stroke="#526954" stroke-width="7"><rect x="60" y="42" width="210" height="155"/><rect x="345" y="42" width="210" height="155"/><rect x="630" y="23" width="210" height="174"/></g><g stroke="#526954" stroke-width="7"><path d="M140 42V197M345 97H555M450 97V197M765 23V197"/></g><g fill="#23312b" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle"><text x="100" y="125">F1 fast</text><text x="205" y="125">F2 öppning</text><text x="450" y="77">F1 överljus</text><text x="398" y="154">F2</text><text x="503" y="154">F3</text><text x="697" y="108">F1 dörr</text><text x="803" y="108">F2 fast</text><text x="165" y="230">Olikdelning</text><text x="450" y="230">Lokal delning och tvärpost</text><text x="735" y="230">Dörr och sidoljus</text></g></svg>
+<div class="grid"><div class="card"><h3>Det beredaren ska kunna styra</h3><ul><li>Fältmått, post/tvärpost, låsta mått och lika delning.</li><li>Fast glas, fast båge eller öppningsbar enhet per fält.</li><li>Öppningsriktning, funktion och hängsida med tydlig vyreferens.</li><li>Inner-/ytterbåge, glas, fyllning och spröjs per vald nivå.</li></ul></div><div class="card"><h3>Det regelmotorn ska avgöra</h3><ul><li>Tillåten produkt, form och öppningsfunktion.</li><li>Min/max mått, area, vikt och godkänt beslag.</li><li>Posters och förbands tillåtna användning.</li><li>Vilka kombinationer som kräver konstruktionsgranskning.</li></ul></div></div>
+<p class="small">Föreslagen modell: ytterkontur → delningar/poster → fält → öppningsenhet → delbågar → glasplatser. Ett kopplat KFI-fönster behöver beskriva både inner- och ytterbåge och sambandet mellan dem.</p>
+</section>
+<section id="sprojs">
+<h2>3. Spröjs ska redigeras på rätt lager</h2>
+<div class="table-wrap"><table><thead><tr><th>Komponent</th><th>Fysisk innebörd</th><th>Konsekvens i underlaget</th></tr></thead><tbody>
+<tr><td>Karmpost / tvärpost</td><td>Avdelar karmens fält och har ett eget konstruktionssnitt.</td><td>Fältstruktur, förband, profildelar och glas-/bågmått.</td></tr>
+<tr><td>Glasdelande spröjs</td><td>Delar ett bestämt glas i verkliga separata glasbitar.</td><td>Flera glas-ID:n och orderrader; egen fogning och kap-/bearbetningsregel.</td></tr>
+<tr><td>Utanpåliggande dekor</td><td>Profil på angiven sida av glaset, med specificerad infästning.</td><td>Spröjsdelar och fästen. Löstagbar och limmad måste vara skilda system.</td></tr>
+<tr><td>Mellanglasspröjs</td><td>Spröjs i ett angivet hålrum i den förseglade isolerrutan.</td><td>Data till rätt glasorder, spaltutrymme, leverantörskod och tolerans.</td></tr>
+<tr><td>Kombinationssystem</td><td>Exempelvis dekorprofiler på båda sidor och distansprofil i isolerruta.</td><td>Godkänt recept med flera samlinjerade artiklar och skilda lager.</td></tr>
+<tr><td>Laserskuren dekor</td><td>Formskuren del med egen kontur och infästning.</td><td>Konturfil, material/tjocklek, finish och granskade monteringsregler.</td></tr>
+</tbody></table></div>
+<p class="small">Tabellen är en föreslagen komponentindelning. Alla typer är inte verifierade som generella Snidexalternativ.</p>
+<div class="note"><strong>”Mellan glasen” måste preciseras.</strong> Ett kopplat 2+1-fönster har både en isolerruta och ett åtkomligt utrymme mellan kopplade bågar. För 3-glas finns två isolerrutespalter. Dessa platser har olika montage- och beställningsregler.</div>
+<h3>En spröjsredigerare för beredaren</h3>
+<ol><li><strong>Markera fält, båge och glaslager.</strong> Välj ett godkänt spröjssystem eller skapa en tydligt märkt specialförfrågan.</li><li><strong>Lägg en mall eller rita segment.</strong> Kors, rutnät, överdel, brutna spröjs och blandad profilbredd behöver kunna beskrivas. Bågar, radialer och dekor kräver egna regler.</li><li><strong>Dra eller skriv exakta mått.</strong> Snäpp till befintliga linjer, samlinjera mellan luft, kopiera och spegla utvalda mönster.</li><li><strong>Välj fördelningsprincip.</strong> Lika centrumavstånd och lika fria glasytor är olika val. Lås om ett mått ska bevaras vid ändrad karmstorlek.</li><li><strong>Kontrollera delarna.</strong> Visa anslutningar, profildjup, fästen, kvarstående frågor och vilka glas som faktiskt delas.</li></ol>
+<h3>Varje mått behöver en namngiven referens</h3>
+<p>Förslaget är att lagra geometrin i mm från karmens nedre vänstra hörn, sedd utifrån. Ritningen ska alltid ange vy. Snidex behöver fastställa konventionen för höger/vänster samt om ett visat spröjsmått avser centrum, profilkant, glasdag, glasets beställningskant eller bågreferens. Enbart ”450 mm” är inte ett entydigt produktionsmått.</p>
+<p>Glasuppbyggnaden behöver egna revisionsbundna recept: glas och tjocklekar, härdning/laminering, beläggningsyta, gas/spalt, distans, total tjocklek, orientering och vikt. Ett färgat glas i en rendering avgör inte vilken solskyddsprodukt som ska beställas.</p>
+<p class="small">Officiella jämförelser visar varför systemen behöver hållas isär: <a href="https://cx.p.elitfonster.se/globalassets/pimdocuments/ovrigt/Sprojs-och-Poster_2025.pdf">Elitfönster</a> beskriver skilda dekor-, mellanglas- och glasdelande system samt gränser för längd/fästpunkter. <a href="https://www.svenskafonster.se/tillbehor-tillval/sprojs">Svenska Fönster</a> skiljer utföranden och material efter produkt och mönster. Deras mått och regler ska inte användas som Snidex standard.</p>
+</section>
+<section id="beslag">
+<h2>4. Beslag är ett recept med placering och villkor</h2>
+<p>Beslagsinventeringen behöver omfatta gångjärn, koppelbeslag, sax-/kipp-drehdelar, spanjolett, låspunkter, handtag, broms, barnspärr och eventuella motorer. Varje komponent behöver artikel, antal, placering, handning och bearbetningsreferens. En handtagsfinish beskriver inte hela beslagsatsen.</p>
+<p><a href="https://www.snidex.se/wp-content/uploads/2025/06/Snidex-ABM-250429.pdf">Snidex ABM 250429</a> beskriver kopplade bågar, underkantshängning och kipp-dreh över sortimentet. Manualen visar också att beslag/låspunkter kan variera med storlek. Det belägger inte en viss beslagssats för varje produkt och form.</p>
+<p>Snidex har även en <a href="https://www.snidex.se/wp-content/uploads/montageanvisning-winkhaus.pdf">Winkhaus-anvisning</a> som skiljer Dreh-kipp, Kipp-dreh och mötesbågens manövrering. Dokumentet belägger funktionsfamiljer och leverantörsanknytning, men fastställer inte dagens standardbeslag eller viktgräns för alla SA/ST-system.</p>
+<h3>Konkreta artiklar att inventera vidare</h3>
+<p class="small">Reservdelsbutiken ger artikelspår att börja med. En listad artikel är inte automatiskt godkänd för ett nytt fönster med valfri storlek, konstruktion eller årgång. Kontrollera komplett sats, hålbild, handning och antal.</p>
+<div class="table-wrap"><table><thead><tr><th>Artikelspår</th><th>Snidex nr</th><th>Belägg och kvarstående kontroll</th></tr></thead><tbody>
+<tr><td><a href="https://shop.snidex.se/products/htg-hoppe-inatgaende">Hoppe Tokyo Rak 7/43</a></td><td>3140-2710</td><td>Verklig handtagsartikel. Modellkoppling, hålbild och sprintlängd behöver godkännas i receptet.</td></tr>
+<tr><td><a href="https://shop.snidex.se/products/assa-htg-83-r-8-53-krom">Assa HTG 83 Rak 8/53</a></td><td>3140-0532</td><td>Handtag för fönster/fönsterdörr. Koppling 833 anges för handtag på båda sidor; är en separat del.</td></tr>
+<tr><td><a href="https://shop.snidex.se/products/htg-nyckel-7743">Hoppe Tokyo nyckelhandtag</a></td><td>3140-1891</td><td>Avtagbar manövrering till Hoppe bricka. Exakt produkt- och brandkoppling behöver kontrolleras.</td></tr>
+<tr><td><a href="https://shop.snidex.se/products/handtagsparr">Hoppe Kisi2, 7 mm</a> / <a href="https://shop.snidex.se/products/hoppe-kisi-180-grader-inatgaende">8 mm</a></td><td>3140-2751 / 3140-1871</td><td>Olika sprintdimensioner. Angiven handtagsrotation är inte bågens öppningsvinkel.</td></tr>
+<tr><td><a href="https://shop.snidex.se/products/htg-don-assa-805-7-43">Assa FIX 805</a> + <a href="https://shop.snidex.se/products/htg-nyckel-assa-811">FIX 811</a></td><td>3140-3233 / 3140-3360</td><td>Begränsad manövrering med separat handtag. Ska matcha rätt spanjolett och kravbild.</td></tr>
+<tr><td><a href="https://shop.snidex.se/products/ventb-2mm-assa-92">Assa 92</a> / <a href="https://shop.snidex.se/products/snore-assa-184-vit">Assa 184</a></td><td>3125-0375 / 3125-0460</td><td>Ventilationsbeslag respektive säkerhetslina. Skilda funktioner och artiklar; inte samma sak som en vädringslucka.</td></tr>
+<tr><td><a href="https://shop.snidex.se/products/koppelbeslag-85">Koppelbeslag 85</a></td><td>3120-0050</td><td>Butiken anger produkter i trä. Exakt ST-variant, årgång och antal är inte fastställda.</td></tr>
+<tr><td><a href="https://shop.snidex.se/products/koppelhake-kbe-sa-hondel-kopia">KBE-SA hane</a> / <a href="https://shop.snidex.se/products/koppelhake-kbe-sa-hona">hona</a></td><td>3120-0052 / 3120-0051</td><td>Anges för utåtgående trä/aluminiumfönsterdörr. Godkänn sammansättning och revision.</td></tr>
+<tr><td><a href="https://shop.snidex.se/products/bromskarmfaste-assa-5550-t">Bromskarmfäste Assa 5550 T</a></td><td>3125-0209</td><td>Fäste till FIX 160/160S. Fästet är inte ett komplett bromspaket.</td></tr>
+</tbody></table></div>
+<p class="small"><strong>Datakonflikt att lösa:</strong> <a href="https://shop.snidex.se/products/ho-8-53-utatgaende">Hoppe Tokyo 93S höger, 3140-1830</a>, benämns 8/53 men texten anger 7×43 mm. Motsvarande vänsterartikel har samma konflikt enligt inventeringen. Sådana poster ska granskas innan artikelval får användas i en produktionsorder.</p>
+<div class="callout"><strong>Konkreta kompatibilitetsregler behövs.</strong> Snidex anger högst 25 mm lamell och särskilda glapp för mellanglaspersienn. Brandutföranden får inte ha genomföringar som kan sprida brand; öppningsbara brandfönster ska sakna permanent öppningshandtag enligt manualen. Dessa krav behöver kopplas till rätt konstruktionsvariant och granskat underlag.</div>
+<p class="small">Inventeringsmål: vilka beslag används i SA KFI, ST KFI och SA EFI, vilka byts vid storlek/vikt/form, samt vad som skiljer standard, tillval och projektspecial. Tillverkar- och modellnamn ska hämtas från Snidex godkända recept.</p>
+</section>
+<section id="archimede">
+<h2>5. Kosmosoft Archimede som integrationsmål</h2>
+<p>Archimede är ett relevant önskat mottagarsystem för nästa steg. Leverantören dokumenterar kap-, montage- och glaslistor, DXF för delar/glas/paneler, arbetsfaser och CAM med simulering. <a href="https://archimede.kosmosoft.eu/en/production.php">Archimede Production</a></p>
+<p>Införandet omfattar också inläggning av produkt-, verktygs- och beslagsdata samt verkliga provprodukter på CNC. <a href="https://archimede.kosmosoft.eu/en/services.php">Kosmosoft Services</a> Det är ett tydligt stöd för att kopplingen behöver fabriksdata och acceptansprov. Källorna visar inte att ett färdigt import-API eller Snidexbibliotek finns.</p>
+<div class="flow" aria-label="Föreslagen integrationskedja"><div><b>Visuell beredning</b>Val, mått, fält och krav</div><div><b>Kontrollerad revision</b>Artiklar, regler och godkännande</div><div><b>Överenskommen adapter</b>Schema, enheter och kvittens</div><div><b>Archimede</b>Verifierad produktlogik och CAM</div><div><b>Fabriksprov</b>Listor, simulering och provdel</div></div>
+<p>Fastställ först installerad version, licensierade moduler, ägare till produktlogiken och stödd importväg. Välj om Archimede ska härleda tillverkningsmåtten från val/geometri eller ta emot redan beräknade delar. Två parallella regelmotorer behöver annars jämföras och hållas synkroniserade.</p>
+<p class="small">En neutral JSON-, CSV- eller XML-fil är ett integrationsunderlag tills mottagarsystemet har accepterat innehåll och återrapporterat resultat. Körbar maskinfil kräver rätt maskin, styrning, verktyg, klämning och godkänd postprocessor.</p>
+</section>
+<section id="vag">
+<h2>6. En stegvis väg till faktisk produktion</h2>
+<div class="steps">
+<article class="step"><h3>Visuell beredargrund</h3><p>Fältträd med egna delmått och funktioner, spröjslager, entydiga måttreferenser, versionsbunden elevation och register över okända regler.</p><p class="small"><strong>Acceptans:</strong> ändrat karm- eller postmått ger konsekventa vyer och visar berörda fält/spröjs.</p></article>
+<article class="step"><h3>Snidex-verifierade produktrecept</h3><p>Importera profiler, glas och beslag med tillämpningsregler. Skapa artikelspårad beredningsritning och neutrala material-/glas-/beslagsunderlag.</p><p class="small"><strong>Acceptans:</strong> varje del och beräknat mått stämmer mot Snidex godkända exempelorder.</p></article>
+<article class="step"><h3>Gemensam order och revisionsstyrning</h3><p>Fastställ vilket system som äger ordern. Inför roller, gemensam lagring och separata lås för kundgodkännande, inköp och produktion.</p><p class="small"><strong>Acceptans:</strong> ändring efter lås skapar ny revision och visar påverkan på redan skickade beställningar och påbörjade delar.</p></article>
+<article class="step"><h3>Archimede och en verifierad produktionskedja</h3><p>Prova ett kontrakt, en produktfamilj och en maskin i taget. Jämför mottagna order, listor, simulering och verkliga provdelar med godkänt facit.</p><p class="small"><strong>Acceptans:</strong> både importer och avvisningar kan spåras. Produktionsansvarig godkänner resultat och hantering av avvikelser.</p></article>
+</div>
+<h3>Underlagen ska dela samma låsta revision</h3>
+<p>Kundritning, intern beredning, stycklista, glasorder, kaplista, beslagslista och arbetskort ska alla kunna kopplas till samma produkt- och regelrevision. En senare ändring behöver visa vilka artiklar, mått, inköp och operationer som påverkas.</p>
+<div class="note"><strong>Föreslagen statuskedja:</strong> Designutkast → Kundgodkänd design → Beredning → Teknisk kontroll → Frigiven till inköp/produktion. Kundens godkännande av utseendet är en annan händelse än teknisk frigivning. En okänd regel ska visas som okänd.</div>
+</section>
+<section id="masterdata">
+<h2>7. Konkret underlag att samla från Snidex</h2>
+<p>Be konstruktion och beredning ta fram ett sammanhållet paket för <strong>SA KFI, ST KFI och SA EFI</strong>. Följande är en förberedd begäran att använda i arbetsmötet; ingen extern förfrågan har skickats.</p>
+<div class="table-wrap"><table><thead><tr><th>Paket</th><th>Begär konkret</th><th>Behövs för</th></tr></thead><tbody>
+<tr><td>Produkt och standard</td><td>Aktuella systemkoder/revisioner, mest sålda recept, standard/tillval, namngivna ansvariga.</td><td>Rätt startmallar och verifierade standardval.</td></tr>
+<tr><td>Profiler och geometri</td><td>CAD-snitt för karm/båge/post/list/spröjs, fogar, referensytor, avdrag, toleranser, gränser för mått/vikt/form.</td><td>Verkliga tillverkningsmått och rätt delstruktur.</td></tr>
+<tr><td>Spröjs</td><td>Godkända typer per båge/glaslager, artiklar, bredd/djup, kors/T-förband, kapregler, fästen, radier och kulörer.</td><td>Måttsatt redigerare, glasdelning och spröjslista.</td></tr>
+<tr><td>Glas</td><td>Leverantörskoder, kompletta recept, orientering, formfiler, avdrag, toleranser, spröjsspalter och beställningsformat.</td><td>Glasorder och rätt massa/kompatibilitet.</td></tr>
+<tr><td>Beslag och operationer</td><td>Fullständiga satser, storleks-/viktgränser, komponentlägen, handning, bearbetningar, verktyg och arbetsföljd.</td><td>Beslagslista, arbetskort och CAM.</td></tr>
+<tr><td>Prestanda och kontroll</td><td>Provnings-/beräkningsunderlag och tillämpningsområde för ljud, U, brand och säkerhet; granskningsregler.</td><td>Att rätt konstruktion kan frisläppas med rätt krav.</td></tr>
+<tr><td>Archimede</td><td>Version/moduler, dataägare, importbeskrivning, provmiljö, maskin/styrning, postprocessor och kvittensformat.</td><td>En provbar koppling med tydligt ansvar.</td></tr>
+<tr><td>Fabriksfacit</td><td>Godkända orderexempel med kundritning, intern ritning, stycklista, glasorder, kaplista och arbetskort.</td><td>Radvis jämförelse och objektiv acceptans.</td></tr>
+</tbody></table></div>
+<h3>Starta med en liten men avslöjande provserie</h3>
+<p>En rektangel per startprodukt; olikdelad tvåluft; treluft med överljus; KFI med spröjs på vald glasnivå; EFI med önskad isolerrutespröjs; dörr med sidoljus; ett verkligt välvt/runt exempel. Lägg till måttändring efter kundgodkännande och glasbyte efter skickad inköpsorder. Varje fall behöver ett godkänt fabriksfacit.</p>
+</section>
+<section id="kallor">
+<h2>Primärkällor</h2>
+<p class="small">Snidexkällorna styr produktfakta. Övriga leverantörer visar principer och integrationsmöjligheter; de utgör inte Snidex tillverkningsregler.</p>
+<ol class="source-list">
+<li><a href="https://www.snidex.se/snidex-aluminiumfonster/">Snidex Aluminium – SA</a><br>Produktfamiljer, konstruktioner, karmdjup och designval.</li>
+<li><a href="https://www.snidex.se/snidex-trafonster-st/">Snidex Trä – ST</a><br>KFI, former, ytbehandling och publicerade möjligheter.</li>
+<li><a href="https://www.snidex.se/arkitekt/">Snidex för arkitekter</a><br>Kombinationsfält och specialreferenser.</li>
+<li><a href="https://www.snidex.se/fonsterdorrar/">Snidex fönsterdörrar</a><br>Riktningar och projekterade kombinationer.</li>
+<li><a href="https://www.snidex.se/bostadsrattsforening/">Snidex BRF-referenser</a><br>Järven och Tricotfabriken: konkreta spröjsutföranden.</li>
+<li><a href="https://www.snidex.se/wp-content/uploads/2025/06/Snidex-ABM-250429.pdf">Snidex ABM 250429</a><br>Handhavande, montage, persienn och brand, särskilt s. 8, 10 och 12–21.</li>
+<li><a href="https://www.snidex.se/kundservice/">Snidex kundservice</a><br>Offertstruktur och angiven standardkulör.</li>
+<li><a href="https://www.snidex.se/wp-content/uploads/montageanvisning-winkhaus.pdf">Snidex – Winkhaus montageanvisning</a><br>Dreh-kipp, Kipp-dreh och mötesbåge; utgåva ABM 07:1.</li>
+<li><a href="https://shop.snidex.se/collections/handtag">Snidex reservdelar – handtag</a><br>Artikelspår; direkta produktkällor i beslagsinventeringen ovan.</li>
+<li><a href="https://cx.p.elitfonster.se/globalassets/pimdocuments/ovrigt/Sprojs-och-Poster_2025.pdf">Elitfönster – Spröjs & poster</a><br>Jämförelse av olika konstruktions- och infästningssystem.</li>
+<li><a href="https://www.svenskafonster.se/tillbehor-tillval/sprojs">Svenska Fönster – Spröjs & poster</a><br>Jämförelse: produktberoende material och utföranden.</li>
+<li><a href="https://archimede.kosmosoft.eu/en/production.php">Kosmosoft Archimede – Production</a><br>Produktionslistor, DXF, arbetsfaser och CAM.</li>
+<li><a href="https://archimede.kosmosoft.eu/en/services.php">Kosmosoft Archimede – Services</a><br>Produkt-/beslags-/verktygsdata och provprodukter på maskin.</li>
+</ol>
+</section>
+</div>
+<footer>Snidex Studio · Utvecklingsunderlag · 17 oktober 2026<br>Förslag till nästa utvecklingssteg. Tillverkningsregler, artikeldata och produktionsfrigivning behöver fastställas tillsammans med Snidex.</footer>
+</main>
+</body>
+</html>

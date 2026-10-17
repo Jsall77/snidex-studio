@@ -1,11 +1,19 @@
-# Snidex Studio – demonstration
+# Snidex Studio – demonstration och beredningsförslag
 
-Visuell demonstrationskonfigurator för SA KFI, ST KFI, SA EFI, fönsterdörrar och specialformer.
+Webbplats: https://jsall77.github.io/snidex-studio/
 
-Öppna index.html eller använd den publicerade GitHub Pages-sidan. Inga installationer krävs. Projekt sparas i den egna webbläsaren. PDF och JSON skapas lokalt på enheten.
+Visuell konfigurator för SA KFI, ST KFI, SA EFI, fönsterdörrar och specialformer. Version 2 har upp till 6 fält i bredd och 3 rader, postcentrum, individuella öppningssätt/hängning och måttsatt spröjsplacering per fält.
 
-Detta är en prototyp för presentation. Principmodeller och måttintervall är inte verifierade tillverkningsunderlag. Ingen prissättning, orderhantering eller ERP/CAM-koppling ingår.
+20 reservdelsreferenser från Snidex visas med källor och kända datakonflikter. Detta är inte ett automatiskt kompatibilitets- eller inköpsregister.
 
-Produktreferenser: https://www.snidex.se/snidex-aluminiumfonster/ och https://www.snidex.se/snidex-trafonster-st/. Referensfoto: Snidex.
+Kundalbum som PDF samt beredningsblad och gransknings-JSON skapas lokalt på användarens enhet. Projekt sparas i den egna webbläsaren.
 
-Bundlade bibliotek: Three.js och pdf-lib. Respektive licenstext finns i detta arkiv.
+## Produktionsstatus
+
+Detta är ett beredningsförslag för teknisk granskning. Editorns arbetsområde är inte Snidex tillverkningsgränser. Profiler, beslag och glasmått är principiella. Ingen kalkyl, orderhantering, verifierad kaplista, glasorder eller CAM skapas.
+
+Kosmosoft Archimede är integrationsmål. Native-import är inte implementerad. Beredningsformatet `snidex-studio-preparation/2.0` har alltid status `not_released`. Tillverkningsregler, produkt-/artikelmappning och provimport behöver fastställas med Snidex.
+
+Research och utvecklingsunderlag: https://jsall77.github.io/snidex-studio/beredning.html
+
+Bibliotek: Three.js och pdf-lib. Licenstexter finns i arkivet. Produktreferenser och referensfoto: Snidex.
