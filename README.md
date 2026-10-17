@@ -1,8 +1,14 @@
-# Snidex Studio 3.1
+# Snidex Studio 3.2
 
 Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen demo: https://jsall77.github.io/snidex-studio/ . Källorna och exempeldata innehåller ingen verklig kundorder.
 
 Starta `python3 -m http.server 5177 --directory dist`. Ingen installation eller byggkedja krävs. För en självständig HTML-fil används `../package_standalone.py` från arbetsytans rot (lokala absoluta arbetsvägar i paketeringsverktyget).
+
+## Version 3.2
+
+- Grafisk profil från användarens tillhandahållna logotypsida: RGB244/163/0, #F4A300, svart och vitt.
+- Grundlogotyp på ljusa ytor, negativ på svart och helsvart på andra underlag; symbol och ordmärke behåller proportionerna och får avskilt friutrymme.
+- Samma logotyp-/färgbehandling i gränssnitt, kundalbum, produktionsförslag och HTML-exporter. Typografi är inte specificerad i utdraget; Montserrat/Helvetica behålls.
 
 ## Version 3.1
 
@@ -42,4 +48,4 @@ Intern drift med gemensamma projekt, behörigheter, central attest och autentise
 
 Kör med Node: `check-model.mjs`, `check-model-v3.mjs`, `check-preparation.mjs`, `check-production-v3.mjs`, `check-project-v3.mjs`. Testerna omfattar 192 + 432 + 1152 geometri-/beredningsfall samt meningsfulla scen-, regel-, recept-, lås-, import-, mängd-, hash- och kvittensfall. Separata presentations-/material-/glaseditortester finns i arbetsytans `work/`. PDF-exempel provgenereras i riktig webbläsare och renderas för visuell kontroll.
 
-Snidex grafiska webbprofil är observerad på deras startsida, inte hämtad ur en officiell grafisk manual. Originalbilder och logga attribueras Snidex. Montserrat distribueras under OFL. Three.js, pdf-lib och RAL-skärmdatans MIT-licenser medföljer under assets. RAL-datan är en oberoende ungefärlig skärmpalett, inte RAL:s licensierade digitalbibliotek. Fysiskt kulörprov behövs före order.
+Den grafiska profilen följer nu användarens tillhandahållna logotypsida; tidigare webbobserverade färger har ersatts. Originalbilder och logga attribueras Snidex. Montserrat distribueras under OFL. Three.js, pdf-lib och RAL-skärmdatans MIT-licenser medföljer under assets. RAL-datan är en oberoende ungefärlig skärmpalett, inte RAL:s licensierade digitalbibliotek. Fysiskt kulörprov behövs före order.
