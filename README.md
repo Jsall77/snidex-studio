@@ -1,8 +1,16 @@
-# Snidex Studio 3
+# Snidex Studio 3.1
 
 Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen demo: https://jsall77.github.io/snidex-studio/ . Källorna och exempeldata innehåller ingen verklig kundorder.
 
 Starta `python3 -m http.server 5177 --directory dist`. Ingen installation eller byggkedja krävs. För en självständig HTML-fil används `../package_standalone.py` från arbetsytans rot (lokala absoluta arbetsvägar i paketeringsverktyget).
+
+## Version 3.1
+
+- Tydlig måttpanel med karmdjup och separata önskemål för huvud-/innerbåge, ytterbåge i kopplad konstruktion, synliga karm-/bågbredder, post/tvärpost samt glasfals.
+- Numeriskt märkt Snitt-vy och uppdaterad principgeometri; null betyder okänt mått, aldrig ett påstått standardmått.
+- Profilsatser kräver uttrycklig `frameDepths`-tillämpning och matchning mot begärda `sectionDimensions` innan profil-/kaplistor kan beräknas. Egna källnoteringar verifierar inte en profil.
+- Rättningar av låsta fältval vid mallbyte, lokala postcentrum i beredning och fältspecifika glas-/beslagsönskemål i kundalbum.
+- Konstruktionsmått följer projekt, delad konfiguration, kundalbum och produktionsförslag.
 
 ## Genomfört
 
