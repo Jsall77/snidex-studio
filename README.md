@@ -4,6 +4,10 @@ Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen d
 
 Öppna den publicerade länken. För en lokal kopia av detta publika arkiv: starta `python3 -m http.server 5177` i katalogen och öppna localhost:5177. Ingen installation eller byggkedja krävs.
 
+## Introduktionsfilm · 18 oktober 2026
+
+Filmknappen ligger bredvid Snidexloggan uppe till vänster. Den nya filmen är 1 minut och 40 sekunder, med 14 avsnitt och svenska textskyltar. Avsnittsknappar låter användaren hoppa till leveranssatser, produktionssatser, fem avdelningar och häckning. Textversion finns i spelaren och på introduktionssidan.
+
 ## Version 3.4
 
 - Leveranssatser och delorder med antal per position, kvar att fördela, egna datum/adresser samt versionslåsta underlag. Huvudprojektets mängder behålls.
