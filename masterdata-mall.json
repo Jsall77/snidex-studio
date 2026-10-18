@@ -2,6 +2,11 @@
   "schema": "snidex-masterdata/1.0",
   "version": "draft-1",
   "source": "Tom mall: ersätt med Snidex godkända datakälla och revisionsreferens.",
+  "formatNotes": {
+    "hardwareDependencies": "Beslagssatser kräver explicit restrictorOptions för vald öppningsbegränsare/broms: requested eller none. Äldre true/false-önskemål motsvarar requested/none. En vald broms får inte automatiskt återanvända en omappad beslagssats.",
+    "hardwareHanding": "hinges deklarerar left/right för den sparade konfigurationens geometriska gångjärnssida. Mappa uttryckligen mot Snidex tillverkningskonvention; etiketten i vyn kan speglas. Om hinges är deklarerad måste sidan matcha. Tilt, tilt-turn och turn-tilt kräver uttryckliga operations och hinges även i assembly-recept. Detta är tillämpningsdata, ingen automatisk kompatibilitetsbedömning.",
+    "hardwareArticles": "hardwareSuppliers och espagnoletteReferences måste uttryckligen täcka önskemål. Begärd handtagsartikel ska ingå bland components. Alla artiklar, samband, gränsmått och revisionsuppgifter ska komma från Snidex verifierade underlag. Inga artikelnummer medföljer denna tomma mall."
+  },
   "profiles": [],
   "glassRecipes": [],
   "hardwareSets": [],

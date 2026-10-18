@@ -1,8 +1,17 @@
-# Snidex Studio 3.3
+# Snidex Studio 3.4
 
 Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen demo: https://jsall77.github.io/snidex-studio/ . Källorna och exempeldata innehåller ingen verklig kundorder.
 
-Starta `python3 -m http.server 5177 --directory dist`. Ingen installation eller byggkedja krävs. För en självständig HTML-fil används `../package_standalone.py` från arbetsytans rot (lokala absoluta arbetsvägar i paketeringsverktyget).
+Öppna den publicerade länken. För en lokal kopia av detta publika arkiv: starta `python3 -m http.server 5177` i katalogen och öppna localhost:5177. Ingen installation eller byggkedja krävs.
+
+## Version 3.4
+
+- Leveranssatser och delorder med antal per position, kvar att fördela, egna datum/adresser samt versionslåsta underlag. Huvudprojektets mängder behålls.
+- Produktionssatser från en eller flera leveranser, med separata underlag för Trä, Ytbehandling, Glasning, Aluminium och Montering. Lokala avdelningsstatusar och PDF/HTML/JSON.
+- Häckningsförslag per lägenhet, våning eller egen grupp. En position kan delas mellan grupper. Verkliga häckmått, packdjup, emballagemarginal och vikter anges av beredaren. Leveranser blandas inte i en häck; förslaget söker effektiv packning men garanterar inte globalt optimum.
+- Luftnummer och hängning från gångjärnssidan: insida för fönster, utsida för fönsterdörrar. Nya tvåluftsfönster får gångjärnen mot ytterkanterna; äldre sparade utföranden behåller sin fysiska hängning. Serviceläget för kopplade bågar visar 60° inåt och därefter ytterbågen 20° utåt.
+- IndexedDB för större projekt och snapshots. Projektimport/export omfattar leveranser, produktionssatser och häckning. Exportera projektfilen som säkerhetskopia.
+- Underlagen är beredningsförslag. Verifierade profiler, komponentkombinationer och recept behövs före skarp produktion; ingen native Archimede-/CAM-koppling eller maskinfrisläppning är införd.
 
 ## Version 3.3
 
@@ -46,7 +55,7 @@ Alla beräknade listor kräver uttryckligt importerade recept. Tomt/ofullständi
 
 ## Lagring och delning
 
-GitHub Pages är öppet och har ingen inloggning. Projekt, masterdata, dokumentarkiv och ångrahistorik lagras lokalt i webbläsaren, inte på en gemensam server. Exportera projektfiler för säkerhetskopia. Delningslänkar innehåller bara fönsterkonfiguration, inte projekt-/kundmetadata. Fasadfoton hålls i sidans minne och skickas inte iväg. Skärmen skickar inga order/offertförfrågningar.
+GitHub Pages är öppet och har ingen inloggning. Projekt, masterdata, dokumentarkiv och ångrahistorik lagras lokalt i webbläsarens IndexedDB, inte på en gemensam server. Exportera projektfiler för säkerhetskopia. Delningslänkar innehåller bara fönsterkonfiguration, inte projekt-/kundmetadata. Fasadfoton hålls i sidans minne och skickas inte iväg. Skärmen skickar inga order/offertförfrågningar.
 
 Intern drift med gemensamma projekt, behörigheter, central attest och autentiserad ERP-återrapportering kräver en separat server och verifierad integration.
 
