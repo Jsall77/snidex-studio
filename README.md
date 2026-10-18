@@ -1,8 +1,14 @@
-# Snidex Studio 3.2
+# Snidex Studio 3.3
 
 Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen demo: https://jsall77.github.io/snidex-studio/ . Källorna och exempeldata innehåller ingen verklig kundorder.
 
 Starta `python3 -m http.server 5177 --directory dist`. Ingen installation eller byggkedja krävs. För en självständig HTML-fil används `../package_standalone.py` från arbetsytans rot (lokala absoluta arbetsvägar i paketeringsverktyget).
+
+## Version 3.3
+
+- Zoom mot pekaren, dubbelklick för detaljvy, panorering med Shift/högerdrag eller Flytta vy samt tvåfingersgester. Piltangenter flyttar, +/- zoomar, 0 återställer. Kameraläget ändrar inte projektdata eller kundbildens utsnitt.
+- Egen innerprofil direkt under standardvalen; fungerande avsnittsgenvägar i bred och smal layout.
+- 40 sekunders svensk textad introduktionsfilm med animerade markeringar på riktiga skärmbilder, och läsbar textversion.
 
 ## Version 3.2
 
