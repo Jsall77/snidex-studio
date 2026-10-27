@@ -1,3 +1,11 @@
+## Version 3.6.1 - handtag, UKH och ÖKH
+
+Handtag monteras nu på den verkliga bågprofilen i både 2D och 3D. Sneda/välvda fält och smala profiler använder samma geometriska placering; önskad höjd sparas oförändrad och en eventuell anpassning av illustrationen visas i gränssnittet. Handtag och gångjärn följer bågen under öppning.
+
+UKH (underkantshängt) har handtag i överkant och gångjärn i underkant. ÖKH (överkantshängt) har motsvarande placering i underkant/överkant. Horisontell hängning följer med till underlag och kräver uttrycklig bottom/top-mappning i beslagsrecept. ÖKH på icke-horisontell överkant visas stängd med konstruktionsvarning; inga påhittade gångjärnsaxlar eller produktionsgodkännanden.
+
+Tre agentgranskningar. Regression: 8 478 handtagsplaceringar, 396 504 faktiska Three.js-plattvertices, 56 rörelsefall/1 560 kontroller, plus befintliga modell-, service-, berednings-, beslags- och detaljritningskontroller.
+
 ## Version 3.6 - detaljritningar
 
 Knappen Detaljritningar finns under produktvyn och i Projektdokument. Välj aktuellt arbetsutförande (även osparade val) eller alla sparade projektpositioner. Förhandsvisningen låter dig välja ritningsblad innan export.
