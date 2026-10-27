@@ -1,3 +1,11 @@
+## Version 3.6 - detaljritningar
+
+Knappen Detaljritningar finns under produktvyn och i Projektdokument. Välj aktuellt arbetsutförande (även osparade val) eller alla sparade projektpositioner. Förhandsvisningen låter dig välja ritningsblad innan export.
+
+Paketet innehåller sammanställning från in- och utsida, separata detaljblad per luft och ett måttsatt principsnitt för karm/båge. Aktiv egen profil får konturblad med alla punktkoordinater. Lokala postcentrum, välvningar, öppningsprincip, hängning, spröjscentrum och montageönskemål följer samma modell som konfiguratorn. Öppningssymboler klipps mot välvt/snett glas.
+
+Exportformat: vektor-PDF i A3 liggande, självständig utskrivbar HTML och SVG för valt blad. PDF/HTML sparas som frysta projektversioner i det lokala dokumentarkivet. Skala och skalstreck visas per blad; skalan gäller A3 i 100 %. Delmått är karmytterkant/postcentrum, synliga glasmått är illustrativa. Tillverkningsritningar, glasorder, kapmått och exakt profil-/beslagsgeometri kräver fortsatt verifierade Snidexdata. Ingen produktion frisläpps.
+
 ## Agentgranskning · version 3.5.1
 
 Rättat kopiering med osparade ändringar; bevarat sökfilter, kort/listläge och fokus vid antalsändring; visat importerade requested/verified-montageval korrekt; stabilt tangentbordsfokus efter lika/exakta delmått; avvisat ärvda objektnamn som ogiltiga enumval. Montagekrav har nu svenska etiketter och önskade värden i kund-PDF, berednings-HTML och produktionsförslag. Underlag och önskemål innebär fortsatt ingen produktionsfrigivning. Tre riktade agentgranskningar och regressionskontroller genomförda.
@@ -16,7 +24,7 @@ Rättat kopiering med osparade ändringar; bevarat sökfilter, kort/listläge oc
 UKH finns redan som underkantshängd principfunktion; användarens avsedda beteende/produktomfattning behöver bekräftas innan ytterligare regler införs. Automatisk läsning av A-ritningar/förfrågningar är ännu inte byggd. Arkitekt-/konsultläge, omarbetad kundspecifikation och verklighetstrogen produktfotografering behöver eget underlag och utvärdering. Befintlig fasadfunktion kan använda uppladdade foton men rekonstruerar inte produkter automatiskt.
 
 
-# Snidex Studio 3.5.1
+# Snidex Studio 3.6
 
 Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen demo: https://jsall77.github.io/snidex-studio/ . Källorna och exempeldata innehåller ingen verklig kundorder.
 
