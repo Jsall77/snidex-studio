@@ -1,3 +1,7 @@
+## Agentgranskning · version 3.5.1
+
+Rättat kopiering med osparade ändringar; bevarat sökfilter, kort/listläge och fokus vid antalsändring; visat importerade requested/verified-montageval korrekt; stabilt tangentbordsfokus efter lika/exakta delmått; avvisat ärvda objektnamn som ogiltiga enumval. Montagekrav har nu svenska etiketter och önskade värden i kund-PDF, berednings-HTML och produktionsförslag. Underlag och önskemål innebär fortsatt ingen produktionsfrigivning. Tre riktade agentgranskningar och regressionskontroller genomförda.
+
 ## Version 3.5 · återkoppling 27 oktober 2026
 
 - Modell: startmall 1200 × 1800 med välvt odelat överljus och två nedre luft; tvärpostcentrum vid 900 mm. Samma fältträd används för ritning, 3D, delning och beredning.
@@ -12,7 +16,7 @@
 UKH finns redan som underkantshängd principfunktion; användarens avsedda beteende/produktomfattning behöver bekräftas innan ytterligare regler införs. Automatisk läsning av A-ritningar/förfrågningar är ännu inte byggd. Arkitekt-/konsultläge, omarbetad kundspecifikation och verklighetstrogen produktfotografering behöver eget underlag och utvärdering. Befintlig fasadfunktion kan använda uppladdade foton men rekonstruerar inte produkter automatiskt.
 
 
-# Snidex Studio 3.5
+# Snidex Studio 3.5.1
 
 Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen demo: https://jsall77.github.io/snidex-studio/ . Källorna och exempeldata innehåller ingen verklig kundorder.
 
