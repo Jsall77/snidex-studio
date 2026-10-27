@@ -1,4 +1,18 @@
-# Snidex Studio 3.4
+## Version 3.5 · återkoppling 27 oktober 2026
+
+- Modell: startmall 1200 × 1800 med välvt odelat överljus och två nedre luft; tvärpostcentrum vid 900 mm. Samma fältträd används för ritning, 3D, delning och beredning.
+- Mått: lika delmått eller exakta delmått som summerar till karmmåttet. Delmått avser karmytterkant/postcentrum, skalar vid storleksändring och är inte glasbeställningsmått. Lokal lika delning ändrar bara vald post; övriga fältval behålls.
+- Flera luft: markera alla eller valfria luft och tillämpa öppningssätt. Övriga lufts funktion, hängning, glas, beslag och krav behålls. Luftnummer följer befintlig referensvy från gångjärnssidan.
+- Spröjs: lika fria glasbredder/höjder med avdrag för illustrerad spröjsbredd, eller exakta centrum. Specialformer ger inte lika glasareor. Överlappande och kantöverskridande exakta spröjscentrum avvisas.
+- Detaljer: montageönskemål per luft för hellimmad kassett, skyddskrav, vridstångslängd och persiennreglagets sida. Sparas i befintligt kravformat och granskas tillsammans med glas/beslag. Inget val verifierar en skyddsklass eller godkänner produktion.
+- Mitt projekt: kompakt sökbar litteralista som standard, med antal/redigera/kopiera; större produktkort finns kvar som valbar vy. Lokala projekt, ångra, revisioner, låsning och exporter används som tidigare.
+
+### Kvar från återkopplingen
+
+UKH finns redan som underkantshängd principfunktion; användarens avsedda beteende/produktomfattning behöver bekräftas innan ytterligare regler införs. Automatisk läsning av A-ritningar/förfrågningar är ännu inte byggd. Arkitekt-/konsultläge, omarbetad kundspecifikation och verklighetstrogen produktfotografering behöver eget underlag och utvärdering. Befintlig fasadfunktion kan använda uppladdade foton men rekonstruerar inte produkter automatiskt.
+
+
+# Snidex Studio 3.5
 
 Demonstration av ett internt projekt- och beredningsverktyg. Publicerad öppen demo: https://jsall77.github.io/snidex-studio/ . Källorna och exempeldata innehåller ingen verklig kundorder.
 
